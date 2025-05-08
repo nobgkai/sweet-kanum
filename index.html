@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ขนมหวาน</title>
+</head>
+<style>
+
+    body{
+        background-color: #f9f9f9;
+    color: #333;
+        font-family: 'Sarabun', sans-serif;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    .h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    img{
+        width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     
+    }
+    .content{
+
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      text-align: center;
+      padding-top: 40px;
+      margin-top: auto;
+    }
+    a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 5px;
+        border: #2b2b2b;
+        color: black;
+        border-radius: 3px;
+        margin-top: 1rem;
+        transition: all 0.3 ease;
+        font-size: 20px;
+    }
+    a:hover{
+      background-color: #c4cace;
+      color: #000000; 
+      transform: translateY(-2px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    .box1{
+        padding: 20px;
+    }
+    .content-videos {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  padding: 20px;
+}
+
+.content-videos iframe {
+  width: 600px; 
+  height: 400px;
+  border-radius: 15px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.aaa{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.site-header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.site-footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #ddd;
+}
+
+</style>
+<body>
+  <header class="site-header">
+    <h2>🍰 รวมเมนูขนมหวาน</h2>
+  </header>
+    <div class="content">
+        <h1 >ขนมหวาน</h1>
+        <div>
+            <img src="https://i.pinimg.com/736x/a3/95/c7/a395c70fc26a109ee9c7f92c69a219b4.jpg" alt="Mogi" >
+            
+        </div>
+        <a href="https://youtu.be/FvpmrBg3J_8?si=6Y2cKCL6imzv5xCQ">ขนมโมจิ</a>
+        <div>
+            <img src="https://i.pinimg.com/736x/4e/08/a7/4e08a71afd858c6cd67c5ce2a008e650.jpg" alt="kanumpang">
+            
+        </div>
+        <a href="https://youtu.be/QMgycX6IMU0?si=lhetV1hQdNq7JJLI">ขนมปัง</a>
+        <div>
+            <img src="https://i.pinimg.com/736x/6a/91/c8/6a91c87e29d3fcd532e2d95e52db7ba6.jpg" alt="tadkai">
+        
+        </div>
+
+        <a href="https://youtu.be/4wjURxNfKtk?si=UECf2pIZOSSDrg8i">ขนมไข่</a>
+    </div>
+    <div class="box1">
+        <div class="content-videos">
+            <iframe src="./received_1810489466434946.mp4" frameborder="0"   allowfullscreen></iframe>
+
+        </div>
+        <div class="aaa">
+            <audio src="./TRALALERO TRALALA MASHUP 360°.mp3" controls></audio>
+        </div>
+        
+    </div>
+    <footer class="site-footer">
+      <p>© 2025 Sweet Snacks | จัดทำเพื่อการเรียนรู้</p>
+    </footer>
+    <button id="backToTop" style="
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: #ccc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+">↑ Top</button>
+<script>
+    const btn = document.getElementById("backToTop");
+  
+    window.onscroll = () => {
+      if (window.scrollY > 300) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+  
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</html>
